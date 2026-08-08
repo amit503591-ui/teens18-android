@@ -1,0 +1,3 @@
+﻿package com.teens18.app.model
+
+data class Category(val id: Int, val name: String, val slug: String, val count: Int)

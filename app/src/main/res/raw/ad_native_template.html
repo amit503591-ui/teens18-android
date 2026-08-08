@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: sans-serif; background: transparent; }
+        .native-ad { display: flex; background: #f9f9f9; border: 1px solid #e0e0e0; border-radius: 8px; padding: 10px; margin: 8px; }
+        .ad-icon { width: 60px; height: 60px; border-radius: 8px; background: #ddd; flex-shrink: 0; background-size: cover; }
+        .ad-content { flex: 1; margin-left: 12px; }
+        .ad-title { font-size: 14px; font-weight: 600; color: #212121; margin-bottom: 4px; }
+        .ad-body { font-size: 12px; color: #666; }
+        .ad-sponsored { font-size: 10px; color: #999; text-transform: uppercase; margin-top: 4px; }
+    </style>
+</head>
+<body>
+    <a class="native-ad" href="javascript:void(0)" onclick="Android.onAdClick('__CLICK_URL__')">
+        <div class="ad-icon" id="adIcon"></div>
+        <div class="ad-content">
+            <div class="ad-title">__TITLE__</div>
+            <div class="ad-body">__BODY__</div>
+            <div class="ad-sponsored">__SPONSORED_BY__</div>
+        </div>
+    </a>
+    <script>
+        if ('__ICON_URL__') document.getElementById('adIcon').style.backgroundImage = 'url(__ICON_URL__)';
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+﻿-keep class com.teens18.app.model.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class retrofit2.** { *; }
+-keep class okhttp3.** { *; }
+-keep class org.jsoup.** { *; }

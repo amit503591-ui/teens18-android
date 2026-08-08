@@ -1,0 +1,22 @@
+﻿{
+  "ads_enabled": true,
+  "show_ads_when_offline": false,
+  "ads_frequency": {
+    "banner_in_list": 5,
+    "interstitial_after_articles": 3
+  },
+  "networks": {
+    "google_adsense": {
+      "enabled": false,
+      "publisher_id": "ca-pub-XXXXXXXXXXXXXXXX",
+      "slots": {
+        "banner": "XXXXXXXXXX",
+        "interstitial": "XXXXXXXXXX"
+      }
+    },
+    "custom_html": {
+      "enabled": false,
+      "networks": []
+    }
+  }
+}
